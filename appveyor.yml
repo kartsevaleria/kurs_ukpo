@@ -2,11 +2,11 @@ version: 0.1.{build}
 image: Visual Studio 2019
 build_script:
 - ps: >-
-    .\build.ps1
+    build.ps1
 test:
   # only assemblies to test
   assemblies:
     only:
       - '*.dll'
 test_script:
-  - vstest.console /logger:Appveyor .\LR4\x64\Release\UnitTest1.dll
+  - vstest.console /logger:Appveyor LR4\x64\Release\UnitTest1.dll
