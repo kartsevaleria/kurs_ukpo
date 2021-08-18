@@ -9,5 +9,5 @@ test:
     only:
       - '*.dll'
 test_script:
-  - vstest.console /logger:Appveyor x64\Release\UnitTest1.dll
   - vstest.console /logger:Appveyor x64\Release\UnitTest2.dll
+  - vstest.console /logger:Appveyor x64\Release\UnitTest1.dll
