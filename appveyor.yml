@@ -2,7 +2,7 @@ version: 0.1.{build}
 image: Visual Studio 2019
 build_script:
 - ps: >-
-    build.ps1
+    .\build.ps1
 test:
   # only assemblies to test
   assemblies:
