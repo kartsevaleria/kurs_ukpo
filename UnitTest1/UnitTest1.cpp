@@ -22,7 +22,7 @@ namespace UnitTest3
 		TEST_METHOD(AWithSpace)
 		{
 			vector<string> test;
-			string fileName = "C:\\Users\\user\\Desktop\\Учеба\\3 курс\\Управление качеством ПО\\ЛР2\\LR4\\LR4\\str.txt";
+			string fileName = "str.txt";
 			//test.clear();
 			string str = "test rok";
 			string str1 = "test";
@@ -46,7 +46,7 @@ namespace UnitTest3
 		TEST_METHOD(NotEmptyVector)
 		{
 			vector<string> test;
-			string name = "C:\\Users\\user\\Desktop\\Учеба\\3 курс\\Управление качеством ПО\\ЛР2\\LR4\\LR4\\str.txt";
+			string name = "str.txt";
 			test.push_back("asd");
 			string str = "rok";
 			Assert::AreEqual(4, TestAho(str, test, name));
@@ -55,7 +55,7 @@ namespace UnitTest3
 		TEST_METHOD(YEmptyFile)//последний
 		{
 			vector<string> test;
-			string name = "C:\\Users\\user\\Desktop\\Учеба\\3 курс\\Управление качеством ПО\\ЛР2\\LR2\\LR2\\str.txt";
+			string name = "str.txt";
 			ofstream ofs;
 			ofs.open(name, ios::out | ios::trunc);
 			ofs.close();
