@@ -8,4 +8,4 @@ install:
 script:
   - export PATH=$MSBUILD_PATH:$PATH
   - MSBuild.exe -p:Configuration=Release -p:Platform=x64 LR4.sln
-  - "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\vstest.console.exe" LR4/Release/LR4.exe /Platform:x86
+  - "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\vstest.console.exe" LR4/Release/LR4.exe /Platform:x64
