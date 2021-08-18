@@ -12,7 +12,7 @@ namespace UnitTest2
 	TEST_CLASS(UnitTest2)
 	{
 	public:
-		string name = "C:\\Users\\user\\Desktop\\Учеба\\3 курс\\Управление качеством ПО\\ЛР2\\LR4\\LR4\\str.txt";
+		string name = "str.txt";
 
 		TEST_METHOD(NotIncludingOtherString)
 		{
