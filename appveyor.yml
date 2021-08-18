@@ -9,5 +9,6 @@ test:
     only:
       - '*.dll'
 test_script:
-  - vstest.console /logger:Appveyor x64\Release\UnitTest2.dll
+  - copy .\build.ps1 C:\projects\kurs-ukpo\x64\Release\
   - vstest.console /logger:Appveyor x64\Release\UnitTest1.dll
+  - vstest.console /logger:Appveyor x64\Release\UnitTest2.dll
