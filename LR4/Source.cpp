@@ -13,8 +13,8 @@ typedef map<const char, BorNode*> LinksMap;
 class BorNode {
 public:
 	LinksMap links;
-	BorNode* fail;  // Предыдущее состояние для функции отката. Только для root равно NULL.
-	BorNode* term; // Ближайшее терминальное состояние. Если отстутствует - NULL
+	BorNode* fail;  // ГЏГ°ГҐГ¤Г»Г¤ГіГ№ГҐГҐ Г±Г®Г±ГІГ®ГїГ­ГЁГҐ Г¤Г«Гї ГґГіГ­ГЄГ¶ГЁГЁ Г®ГІГЄГ ГІГ . Г’Г®Г«ГјГЄГ® Г¤Г«Гї root Г°Г ГўГ­Г® NULL.
+	BorNode* term; // ГЃГ«ГЁГ¦Г Г©ГёГҐГҐ ГІГҐГ°Г¬ГЁГ­Г Г«ГјГ­Г®ГҐ Г±Г®Г±ГІГ®ГїГ­ГЁГҐ. Г…Г±Г«ГЁ Г®ГІГ±ГІГіГІГ±ГІГўГіГҐГІ - NULL
 	int out;
 
 
@@ -152,7 +152,7 @@ void ResultSearch(const char* str, vector<string>* rez)
 
 void WriteInFile()
 {
-	ofstream wr("C:\\Users\\user\\Desktop\\Учеба\\3 курс\\Управление качеством ПО\\ЛР2\\LR4\\LR4\\str.txt");
+	ofstream wr("C:\\Users\\user\\Desktop\\Г“Г·ГҐГЎГ \\3 ГЄГіГ°Г±\\Г“ГЇГ°Г ГўГ«ГҐГ­ГЁГҐ ГЄГ Г·ГҐГ±ГІГўГ®Г¬ ГЏГЋ\\Г‹Гђ2\\LR4\\LR4\\str.txt");
 	wr << "test rok roka strok ";
 	wr.close();
 }
@@ -160,7 +160,7 @@ void WriteInFile()
 int ReadFile(AhoCorasick& ak, string FileName)
 {
 	string line;
-	//C:\\Users\\user\\Desktop\\Учеба\\3 курс\\Управление качеством ПО\\ЛР2\\LR2\\LR2\\str.txt
+	//C:\\Users\\user\\Desktop\\Г“Г·ГҐГЎГ \\3 ГЄГіГ°Г±\\Г“ГЇГ°Г ГўГ«ГҐГ­ГЁГҐ ГЄГ Г·ГҐГ±ГІГўГ®Г¬ ГЏГЋ\\Г‹Гђ2\\LR2\\LR2\\str.txt
 	ifstream in(FileName.c_str());
 	if (in.is_open())
 	{
@@ -202,3 +202,5 @@ int main()
 
 	return 0;
 }
+
+
