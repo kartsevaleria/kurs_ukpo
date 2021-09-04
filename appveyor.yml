@@ -12,3 +12,4 @@ test_script:
   - copy .\LR4\str.txt C:\projects\kurs-ukpo\x64\Release\
   - vstest.console /logger:Appveyor x64\Release\UnitTest2.dll
   - vstest.console /logger:Appveyor x64\Release\UnitTest1.dll
+  
