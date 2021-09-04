@@ -19,20 +19,7 @@ namespace UnitTest3
 		//2 - пустой файл
 		//3 - неоткрытый файл
 		//4 - непустой вектор
-		TEST_METHOD(AWithSpace)
-		{
-			vector<string> test;
-			string fileName = "str.txt";
-			//test.clear();
-			string str = "test rok";
-			string str1 = "test";
-			string str2 = "rok";
-			//TestAho(str, test, fileName);
-			TestAho(str, test, fileName);
-			Assert::AreEqual(str1, test[0]);
-			Assert::AreEqual(str2, test[1]);
-
-		}
+		
 		TEST_METHOD(InvalidFileName)
 		{
 			vector<string> test;
